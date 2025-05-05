@@ -8,6 +8,7 @@
     --white: #f7f7f7;
     --primary-color: #e398ca;
     --secondary-color: #9370df;
+    --footer-color: #8263c6;
     --font-family: "Merriweather", serif;
     --heading-font-family: "Source Sans 3", sans-serif;
     --font-size: 16px;
@@ -31,6 +32,20 @@ body {
     font-size: var(--font-size);
     line-height:2;
     color: var(--black);
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .icon {
@@ -129,6 +144,7 @@ ul {
 }
 
 header {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     color:var(--white);
     padding-bottom: var(--padding);
     text-align: center;
@@ -171,7 +187,7 @@ body.project main {
 }
 
 main > div {
-    background-color: var(--black);
+    background-color: var(--secondary-color);
     color: var(--white);
     text-align: center;
     padding:.5rem;
@@ -227,7 +243,7 @@ section.projects div p:first-child {
 }
 
 footer {
-    background-color: var(--lightgrey);
+    background-color: var(--footer-color);
     padding: 2rem;
     text-align: center;
 }
